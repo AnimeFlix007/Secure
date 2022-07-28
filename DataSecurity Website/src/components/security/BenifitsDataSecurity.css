@@ -1,0 +1,74 @@
+.bsecurity {
+    width: 100%;
+    height: 105vh;
+    background: rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.bsecurity::before {
+    content: "";
+    background: url(../../assets/dataSecurity2.jfif) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bsecurity .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 50%;
+    color: white;
+    letter-spacing: .2px;
+    padding: 10px 5px;
+}
+
+.bsecurity .content h1 {
+    margin-bottom: 2rem;
+    text-shadow: 6px 4px 13px #CE5937;
+}
+
+@media screen and (max-width: 1200px) {
+    .bsecurity .content {
+        top: 10%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .bsecurity .content {
+        top: 10%;
+        left: 5%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .bsecurity .content {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .bsecurity .content li {
+        /* padding: 0 10px; */
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bsecurity .content {
+        width: 100%;
+        top: 3%;
+        left: 3%;
+        letter-spacing: 0;
+    }
+
+    .bsecurity .content p{
+       font-size: 7px;
+    }
+}
